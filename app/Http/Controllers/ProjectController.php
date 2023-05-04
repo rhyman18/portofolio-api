@@ -17,7 +17,7 @@ class ProjectController extends Controller
     
     public function index()
     {
-        $data = Projects::all();
+        $data = Projects::orderBy('updated_at', 'desc')->get();
 
         return new ProjectCollection($data);
     }

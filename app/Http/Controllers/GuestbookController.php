@@ -17,7 +17,7 @@ class GuestbookController extends Controller
 
     public function index()
     {
-        $data = Guestbooks::all();
+        $data = Guestbooks::orderBy('updated_at', 'desc')->get();
 
         return new GuestbookCollection($data);
     }
