@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => [env('APP_FE_URL', 'http://localhost:9000')],
+    'allowed_origins' => [env('APP_FE_URL', '*'), 'http://localhost:9000'],
 
     'allowed_origins_patterns' => [],
 
