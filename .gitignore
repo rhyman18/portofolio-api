@@ -21,3 +21,4 @@ Dockerfile
 docker-compose.yml
 /storage/app.conf
 /storage/php.ini
+.vercel
