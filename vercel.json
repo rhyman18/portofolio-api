@@ -8,7 +8,7 @@
     },
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/api/(.*)",
             "dest": "/api/index.php"
         }
     ],
@@ -16,7 +16,7 @@
         "APP_NAME": "Portofolio-Api",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://portofolio-api.vercel.app",
+        "APP_URL": "https://portofolio-api-nine.vercel.app",
         "APP_FE_URL": "https://www.aribudiman.my.id",
         "APP_KEY": "base64:JBH7T7+eSfMMWosoe+ANUP+UjMDrtZixsk0ddUw6OOw=",
 
