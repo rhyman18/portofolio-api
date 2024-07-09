@@ -9,7 +9,19 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/api/index.php"
+            "dest": "/api/index.php",
+            "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+            "headers": {
+                "Access-Control-Allow-Origin": "https://www.aribudiman.my.id"
+            }
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php",
+            "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+            "headers": {
+                "Access-Control-Allow-Origin": "http://localhost:9000"
+            }
         }
     ],
     "env": {
@@ -19,14 +31,12 @@
         "APP_URL": "https://portofolio-api-nine.vercel.app",
         "APP_FE_URL": "https://www.aribudiman.my.id",
         "APP_KEY": "base64:JBH7T7+eSfMMWosoe+ANUP+UjMDrtZixsk0ddUw6OOw=",
-
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
-
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
