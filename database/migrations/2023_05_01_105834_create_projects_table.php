@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('img_hover')->nullable();
             $table->json('tags');
             $table->text('desc');
-            $table->string('repo');
+            $table->string('repo')->nullable();
             $table->timestamps();
         });
     }
