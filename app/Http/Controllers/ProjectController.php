@@ -43,7 +43,6 @@ class ProjectController extends Controller
             'title' => 'required',
             'tags' => 'required',
             'desc' => 'required',
-            'repo' => 'required',
         ]);
 
         if ($validator->fails()) {
