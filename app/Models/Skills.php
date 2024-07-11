@@ -12,7 +12,10 @@ class Skills extends Model
     protected $fillable = [
         'type',
         'name',
-        'icon'
+        'icon',
+        'cert_link',
+        'cert_desc',
+        'cert_img',
     ];
 
     public $timestamps = false;
