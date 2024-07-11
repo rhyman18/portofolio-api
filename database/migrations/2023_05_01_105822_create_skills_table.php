@@ -16,6 +16,9 @@ return new class extends Migration
             $table->string('type')->default('basic');
             $table->string('name');
             $table->string('icon');
+            $table->string('cert_link')->nullable();
+            $table->string('cert_desc')->nullable();
+            $table->string('cert_img')->nullable();
         });
     }
 
